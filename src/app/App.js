@@ -10,7 +10,9 @@ function App() {
   return (
     <Fragment>
       <Header />
-      <PostList />
+      <Switch>
+        <Route exact path="/" component={PostList}/>   
+      </Switch>
     </Fragment>
   )
 }
