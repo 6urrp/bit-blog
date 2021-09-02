@@ -6,9 +6,11 @@ import PostList from './Posts/PostList';
 import SinglePost from "./Posts/SinglePost";
 import SingleAuthor from './Author/SingleAuthor';
 import AllAuthors from './Author/AllAuthors';
+import About from './About/About';
 
 
 import './App.css';
+
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
         <Route path="/post/:id" component={SinglePost} /> 
         <Route exact path="/author/:id" component={SingleAuthor} />      
         <Route path="/Authors" component={AllAuthors} />
+        <Route path="/About" component={About} />
       </Switch>
     </Fragment>
   )
