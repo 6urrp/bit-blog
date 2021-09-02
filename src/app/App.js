@@ -10,6 +10,7 @@ import About from './About/About';
 
 
 import './App.css';
+import Footer from './Footer/Footer';
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/Authors" component={AllAuthors} />
         <Route path="/About" component={About} />
       </Switch>
+      <Footer />
     </Fragment>
   )
 }
