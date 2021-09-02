@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { getAuthor } from "../../services/getAuthor";
 import AuthorName from "./AuthorName";
 import AuthorAddress from "./AuthorAddress";
+import AuthorCompany from "./AuthorCompany";
 
 const SingleAuthor = () => {
     const [singleAuthor, setSingleAuthor] = useState(null)
@@ -23,6 +24,7 @@ const SingleAuthor = () => {
                 <p><Link to="/authors"> &#60; Back</Link></p>
                 <AuthorName author={singleAuthor} />
                 <AuthorAddress author={singleAuthor} />
+                <AuthorCompany author={singleAuthor} />
             </div>
         </Fragment>
         

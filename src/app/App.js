@@ -18,8 +18,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={PostList}/> 
         <Route path="/post/:id" component={SinglePost} /> 
-        <Route exact path="/author/:id" component={SingleAuthor} />  
-        <Route path="/authors" component={{main: AllAuthors, sidebar: SingleAuthor}}/>
+        <Route exact path="/author/:id" component={SingleAuthor} />      
+        <Route path="/Authors" component={AllAuthors} />
       </Switch>
     </Fragment>
   )

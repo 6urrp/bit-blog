@@ -1,6 +1,6 @@
 const AuthorAddress = props => {
     return (
-        <div>
+        <div className="border-bottom d-flex justify-content-between mb-3">
             <div>
                 <h2>Address</h2>
                 <p>street: {props.author.address.street}</p>
