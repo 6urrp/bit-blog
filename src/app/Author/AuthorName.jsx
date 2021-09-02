@@ -1,6 +1,6 @@
 const AuthorName = props => {
     return (
-        <div>
+        <div className="border-bottom mb-3">
             <h2>{props.author.name}</h2>
             <p>username: {props.author.username}</p>
             <p>email: {(props.author.email).toLowerCase()}</p>
