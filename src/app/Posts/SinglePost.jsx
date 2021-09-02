@@ -25,9 +25,12 @@ const SinglePost = props => {
     useEffect(() =>{
         if(author) {
             getPostsFromAuthor(author.id)
-            .then(posts => setPosts(posts))
+            .then(posts => setPosts(posts));
+            localStorage.setItem("authorId", author.id)
         }
     },[author])
+
+
 
     return (
             !author
