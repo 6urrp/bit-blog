@@ -7,6 +7,7 @@ import SinglePost from "./Posts/SinglePost";
 import SingleAuthor from './Author/SingleAuthor';
 import AllAuthors from './Author/AllAuthors';
 
+
 import './App.css';
 
 
@@ -18,7 +19,7 @@ function App() {
         <Route exact path="/" component={PostList}/> 
         <Route path="/post/:id" component={SinglePost} /> 
         <Route exact path="/author/:id" component={SingleAuthor} />  
-        <Route path="/authors" component={AllAuthors}/>
+        <Route path="/authors" component={{main: AllAuthors, sidebar: SingleAuthor}}/>
       </Switch>
     </Fragment>
   )
