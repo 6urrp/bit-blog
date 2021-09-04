@@ -7,15 +7,13 @@ import AuthorName from "./AuthorName";
 import AuthorAddress from "./AuthorAddress";
 import AuthorCompany from "./AuthorCompany";
 
-const SingleAuthor = () => {
+const SingleAuthor = (props) => {
     const [singleAuthor, setSingleAuthor] = useState(null)
-
     useEffect(() => {
-        getAuthor(localStorage.authorId)
+        getAuthor(props.location.state.author)
             .then(single => setSingleAuthor(single))
     }, []);
 
-    console.log(singleAuthor)
     return (
         !singleAuthor ? <h2>Loading</h2>
         :

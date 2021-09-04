@@ -41,7 +41,12 @@ const SinglePost = props => {
             </div>
             <div className="text-center w-75 mx-auto mt-5 border-bottom">
                 <h3>{singlePost.title}</h3>
-                <h5 className="mb-5"><Link to={`/author/${author.id}`}>{author.name}</Link></h5>
+                <h5 className="mb-5"><Link to={{
+                    pathname: `/author/${author.id}`,
+                    state: {
+                        author
+                    }
+                }}>{author.name}</Link></h5>
                 <p>{singlePost.body}</p>
             </div>
             <div className="w-75 mx-auto mt-3">
