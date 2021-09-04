@@ -7,12 +7,11 @@ import SinglePost from "./Posts/SinglePost";
 import SingleAuthor from './Author/SingleAuthor';
 import AllAuthors from './Author/AllAuthors';
 import About from './About/About';
+import Footer from './Footer/Footer';
+import CreatePost from './Posts/CreatePost';
 
 
 import './App.css';
-import Footer from './Footer/Footer';
-
-
 
 function App() {
   return (
@@ -22,8 +21,10 @@ function App() {
         <Route exact path="/" component={PostList}/> 
         <Route path="/post/:id" component={SinglePost} /> 
         <Route exact path="/author/:id" component={SingleAuthor} />      
-        <Route path="/Authors" component={AllAuthors} />
-        <Route path="/About" component={About} />
+        <Route path="/authors" component={AllAuthors} />
+        <Route exact path="/about" component={About} />
+        <Route path="/create-new" component={CreatePost} />
+        
       </Switch>
       <Footer />
     </Fragment>

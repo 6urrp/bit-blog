@@ -8,4 +8,4 @@ const AuthorCompany = props => {
     )
 }
 
-export default AuthorCompany
+export default AuthorCompany;
