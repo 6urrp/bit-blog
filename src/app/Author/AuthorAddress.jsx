@@ -1,5 +1,4 @@
 const AuthorAddress = props => {
-    console.log(props.author)
     return (
         <div className="border-bottom d-flex justify-content-between mb-3">
             <div>

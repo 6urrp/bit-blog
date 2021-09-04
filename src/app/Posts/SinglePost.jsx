@@ -30,8 +30,6 @@ const SinglePost = props => {
         }
     },[author])
 
-
-
     return (
             !author
             ? <h1>Loading...</h1>

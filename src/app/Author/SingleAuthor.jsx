@@ -10,7 +10,7 @@ import AuthorCompany from "./AuthorCompany";
 const SingleAuthor = (props) => {
     const [singleAuthor, setSingleAuthor] = useState(null)
     useEffect(() => {
-        getAuthor(props.location.state.author)
+        getAuthor(props.location.state.author.id)
             .then(single => setSingleAuthor(single))
     }, []);
 
